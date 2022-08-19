@@ -1,0 +1,123 @@
+@media (max-width:1024px ) {
+    .wrap-header {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    .blogs-box-v {
+        width: 80% !important;
+    }
+    .blogs-comment-box {
+        width: 70% !important;
+    }
+    .blog-more-post-box {
+        padding: 40px 20px;
+    }
+    .logo .logob {
+        display: block !important;
+    }
+    .logo .logow {
+        display: none !important;
+    }
+}
+@media (max-width:1023px ) {
+    .blogs-box-v {
+        width: 100% !important;
+        padding: 0 20px;
+    }
+    .blogs-comment-box {
+        width: 100% !important;
+        padding: 80px 20px !important;
+    }
+    .blog-from {
+        width: 100% !important;
+    }
+    .blogs-form-container {
+        padding: 60px 20px !important;
+    }
+    .blogs-share {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .blog-content {
+        margin-top: 50px !important;
+    }
+    .form-input {
+        text-align: center;
+    }
+    .comment-author-avt {
+        width: 50px !important;
+        height: 50px !important;
+        position: absolute;
+    }
+    .comment-content-box {
+        margin-left: 80px;
+        width: 100% !important; 
+    }
+    .comment-infor {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 767px) {
+    .blogs-detail-bg {
+        margin-top: 0 !important;
+        height: 400px !important;
+    }
+    .blog-title h2 {
+        font-size: 1.6rem !important;
+        line-height: unset !important;
+    }
+    .blog-content {
+        margin-top: 30px !important;
+    }
+    .blogs-share {
+        margin-bottom: 30px !important;
+    }
+    .blogs-comment-box {
+        padding: 30px 20px !important;
+    }
+    .blogs-form-container {
+        padding: 30px 20px !important;
+    }
+    .blog-more-post {
+        padding: unset !important;
+    }
+    .form-name-email {
+        flex-wrap: wrap;
+    }
+    .form-name-email input {
+        width: 100% !important;
+    }
+    .form-name-email input:first-child {
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 500px) {
+    .blogs-detail-bg {
+        height: 250px !important;
+    }
+    .blog-title h2 {
+        font-size: 1.3rem !important;
+    }
+    .post-media {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .btn-prev span, .btn-next span {
+        display: none;
+    }
+    .btn-submit {
+        width: 100%;
+    }
+    .comment-item {
+        flex-direction: column;
+    }
+    .comment-content-box {
+        margin: unset !important;      
+        margin-top: 60px !important; 
+    }
+    .comment-author-avt { 
+        margin: unset !important;
+        left: 40px;
+    }
+}
