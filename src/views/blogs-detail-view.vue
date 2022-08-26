@@ -1,181 +1,205 @@
 <template>
-    <div class="detail-blog">
-        <div class="blogs-detail-bg"></div>
-        <div class="blogs-detail-box">
-            <div class="container">
-                <div class="blogs-box-v">
-                    <div class="blog-content">
-                        <div class="blog-title">
-                            <h2>Why Should You Alway First</h2>
-                        </div>
-                        <div class="post-media">
-                            <div class="date">
-                                <span>August 14, 2016</span>
+    <Helmet title="Snow | Why you should Always First">
+        <HeaderSP></HeaderSP>
+        <div class="detail-blog">
+            <div class="blogs-detail-bg"></div>
+            <div class="blogs-detail-box">
+                <div class="container">
+                    <div class="blogs-box-v">
+                        <div class="blog-content">
+                            <div class="blog-title">
+                                <h2>Why Should You Alway First</h2>
                             </div>
-                            <div class="category">
-                                <span>design</span>
-                            </div>
-                            <div class="count-comment">
-                                <span>2 comments</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Pellentesque rhoncus orci a
-                                purus lacinia consectetur. Vestibulum rutrum ex
-                                in odio placerat dictum. Morbi sit amet tortor
-                                mollis, tincidunt magna a, iaculis nisl. Cras
-                                varius odio a arcu rutrum, nec posuere lacus
-                                imperdiet. Proin iaculis, nibh eleifend
-                                elementum pulvinar, erat nisl consequat quam, ac
-                                ornare est sem nec libero. Fusce ac sagittis
-                                quam. Phasellus mattis, nunc a venenatis
-                                laoreet, est ipsum consectetur turpis, in ullam
-                                corper urna tortor eu purus.
-                            </p>
-                            <p>
-                                Quisque cursus risus id ante fermentum, in
-                                auctor quam consectetur. Vestibulum est nisi,
-                                tempus ac vehicula sit amet, blandit et sapien.
-                                Ut congue dui enim, at viverra nisl tempor a.
-                                Donec in enim nec massa lacinia porta. Nullam
-                                lobortis, enim aliquam congue bibendum, libero
-                                turpis tincidunt enim, vel dapibus justo lectus
-                                et risus. Proin eget mi a tortor laoreet dictum.
-                            </p>
-                            <p>
-                                <em
-                                    >Donec consectetur arcu eu diam cursus
-                                    consectetur. Interdum malesuada faucibus.
-                                    Morbi dapibus eros vitae nisi blandit
-                                    lacinia.</em
-                                >
-                            </p>
-                            <p>
-                                Pellentesque viverra nisl a erat volutpat
-                                commodo. Etiam sem justo, pellentesque egestas
-                                finibus at, rutrum efficitur ex. Donec facilisis
-                                magna in mauris fermentum, sit amet porttitor
-                                lorem dictum. Donec in purus elementum, sagittis
-                                magna sit amet, auctor enim. Duis purus ex,
-                                interdum ac lacus in, ullamcorper vestibulum
-                                urna. Duis ornare nec purus ut laoreet.
-                            </p>
-                            <div class="blogs-share">
-                                <strong>Share:</strong>
-                                <a href="#" class="social-link">Facebook</a>
-                                <a href="#" class="social-link">Twitter</a>
-                                <a href="#" class="social-link">Pinterest</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="blogs-comment-container">
-            <div class="container">
-                <div class="blogs-comment-box">
-                    <div class="blog-comments">
-                        <div class="comment-title">
-                            <h3>Comments:</h3>
-                        </div>
-                        <div class="comment-item">
-                            <div class="comment-author-avt">
-                                <img src="../assets/images/chad.jpg" alt="" />
-                            </div>
-                            <div class="comment-content-box">
-                                <div class="comment-infor">
-                                    <div class="author-name">
-                                        <span>John Leonard</span>
-                                    </div>
-                                    <div class="comment-reply-wrap">
-                                        <div class="comment-date">
-                                            <span>20 september, 2016</span>
-                                        </div>
-                                        <div class="comment-reply">
-                                            <span>reply</span>
-                                        </div>
-                                    </div>
+                            <div class="post-media">
+                                <div class="date">
+                                    <span>August 14, 2016</span>
                                 </div>
-                                <div class="comment-content-text">
-                                    <p>
-                                        Nullam ac dui et purus malesuada gravida
-                                        id fermentum orci. In eu ipsum quis urna
-                                        hendrerit condimentum vitae a mauris. In
-                                        congue turpis purus, vitae tempus ante
-                                        id. Donec orci arcu, sagittis ut finibus
-                                        vitae.
-                                    </p>
+                                <div class="category">
+                                    <span>design</span>
+                                </div>
+                                <div class="count-comment">
+                                    <span>2 comments</span>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Pellentesque rhoncus orci a
+                                    purus lacinia consectetur. Vestibulum rutrum
+                                    ex in odio placerat dictum. Morbi sit amet
+                                    tortor mollis, tincidunt magna a, iaculis
+                                    nisl. Cras varius odio a arcu rutrum, nec
+                                    posuere lacus imperdiet. Proin iaculis, nibh
+                                    eleifend elementum pulvinar, erat nisl
+                                    consequat quam, ac ornare est sem nec
+                                    libero. Fusce ac sagittis quam. Phasellus
+                                    mattis, nunc a venenatis laoreet, est ipsum
+                                    consectetur turpis, in ullam corper urna
+                                    tortor eu purus.
+                                </p>
+                                <p>
+                                    Quisque cursus risus id ante fermentum, in
+                                    auctor quam consectetur. Vestibulum est
+                                    nisi, tempus ac vehicula sit amet, blandit
+                                    et sapien. Ut congue dui enim, at viverra
+                                    nisl tempor a. Donec in enim nec massa
+                                    lacinia porta. Nullam lobortis, enim aliquam
+                                    congue bibendum, libero turpis tincidunt
+                                    enim, vel dapibus justo lectus et risus.
+                                    Proin eget mi a tortor laoreet dictum.
+                                </p>
+                                <p>
+                                    <em
+                                        >Donec consectetur arcu eu diam cursus
+                                        consectetur. Interdum malesuada
+                                        faucibus. Morbi dapibus eros vitae nisi
+                                        blandit lacinia.</em
+                                    >
+                                </p>
+                                <p>
+                                    Pellentesque viverra nisl a erat volutpat
+                                    commodo. Etiam sem justo, pellentesque
+                                    egestas finibus at, rutrum efficitur ex.
+                                    Donec facilisis magna in mauris fermentum,
+                                    sit amet porttitor lorem dictum. Donec in
+                                    purus elementum, sagittis magna sit amet,
+                                    auctor enim. Duis purus ex, interdum ac
+                                    lacus in, ullamcorper vestibulum urna. Duis
+                                    ornare nec purus ut laoreet.
+                                </p>
+                                <div class="blogs-share">
+                                    <strong>Share:</strong>
+                                    <a href="#" class="social-link">Facebook</a>
+                                    <a href="#" class="social-link">Twitter</a>
+                                    <a href="#" class="social-link"
+                                        >Pinterest</a
+                                    >
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="blogs-form-container">
-            <div class="container">
-                <div class="blog-from">
-                    <div class="form-title">
-                        <h3>Leave a Comment:</h3>
-                    </div>
-                    <form action="">
-                        <div class="form-input">
-                            <div class="form-name-email">
-                                <input placeholder="Your Name" type="text" />
-                                <input placeholder="Your Email" type="text" />
+            <div class="blogs-comment-container">
+                <div class="container">
+                    <div class="blogs-comment-box">
+                        <div class="blog-comments">
+                            <div class="comment-title">
+                                <h3>Comments:</h3>
                             </div>
-                            <div class="form-commnent">
-                                <textarea
-                                    placeholder="Your Comment"
-                                    name=""
-                                    id=""
-                                    cols="30"
-                                    rows="10"
-                                ></textarea>
+                            <div class="comment-item">
+                                <div class="comment-author-avt">
+                                    <img
+                                        src="../assets/images/chad.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="comment-content-box">
+                                    <div class="comment-infor">
+                                        <div class="author-name">
+                                            <span>John Leonard</span>
+                                        </div>
+                                        <div class="comment-reply-wrap">
+                                            <div class="comment-date">
+                                                <span>20 september, 2016</span>
+                                            </div>
+                                            <div class="comment-reply">
+                                                <a href="#">reply</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-content-text">
+                                        <p>
+                                            Nullam ac dui et purus malesuada
+                                            gravida id fermentum orci. In eu
+                                            ipsum quis urna hendrerit
+                                            condimentum vitae a mauris. In
+                                            congue turpis purus, vitae tempus
+                                            ante id. Donec orci arcu, sagittis
+                                            ut finibus vitae.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <button class="btn-submit">post a comment</button>
                         </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="blog-more-post">
-            <div class="container">
-                <div class="blog-more-post-box">
-                    <div class="btn-prev">
-                        <ThemifyIcon icon="angle-left"></ThemifyIcon>
-                        <span>Previous post</span>
-                    </div>
-                    <div class="icon-more-post">
-                        <ThemifyIcon icon="layout-grid2-alt"></ThemifyIcon>
-                    </div>
-                    <div class="btn-next">
-                        <span>next post</span>
-                        <ThemifyIcon icon="angle-right"></ThemifyIcon>
                     </div>
                 </div>
             </div>
+            <div class="blogs-form-container">
+                <div class="container">
+                    <div class="blog-from">
+                        <div class="form-title">
+                            <h3>Leave a Comment:</h3>
+                        </div>
+                        <form action="">
+                            <div class="form-input">
+                                <div class="form-name-email">
+                                    <input
+                                        placeholder="Your Name"
+                                        type="text"
+                                    />
+                                    <input
+                                        placeholder="Your Email"
+                                        type="text"
+                                    />
+                                </div>
+                                <div class="form-commnent">
+                                    <textarea
+                                        placeholder="Your Comment"
+                                        name=""
+                                        id=""
+                                        cols="30"
+                                        rows="10"
+                                    ></textarea>
+                                </div>
+                                <button class="btn-submit">
+                                    post a comment
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-more-post">
+                <div class="container">
+                    <div class="blog-more-post-box">
+                        <a href="#" class="btn-prev">
+                            <ThemifyIcon icon="angle-left"></ThemifyIcon>
+                            <span>Previous post</span>
+                        </a>
+                        <a href="#" class="icon-more-post">
+                            <ThemifyIcon icon="layout-grid2-alt"></ThemifyIcon>
+                        </a>
+                        <a href="#" class="btn-next">
+                            <span>next post</span>
+                            <ThemifyIcon icon="angle-right"></ThemifyIcon>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </Helmet>
 </template>
 <script>
 import ThemifyIcon from "vue-themify-icons";
+import HeaderSP from "@/components/HeaderSP.vue";
+import Helmet from "../components/Helmet.vue";
 
 export default {
     components: {
         ThemifyIcon,
+        HeaderSP,
+        Helmet,
     },
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
+@import '../assets/css/scss/style.scss';
 .blogs-detail-bg {
     background: url("../assets/images/post-6.jpg") no-repeat;
     background-size: cover;
     height: 570px;
     background-position: 50% 50%;
-    margin-top: 100px;
 }
 .blogs-detail-box {
     background-color: #f6f6f6;
@@ -267,6 +291,11 @@ strong {
 .author-name span {
     font-weight: bold;
 }
+.comment-reply {
+    a {
+        color: $black-color;
+    }
+}
 .comment-reply-wrap {
     display: flex;
     text-transform: uppercase;
@@ -331,11 +360,16 @@ button:hover {
     display: flex;
     justify-content: space-between;
     width: 100%;
+
+    a {
+        color: $black-color;
+    }
 }
-.btn-prev span, .btn-next span{
+.btn-prev span,
+.btn-next span {
     text-transform: uppercase;
     margin: 0 15px;
-    font-family: 'Work Sans', sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-size: 0.8;
 }
 </style>

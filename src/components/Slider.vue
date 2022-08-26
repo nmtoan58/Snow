@@ -146,5 +146,8 @@ export default {
   ::v-deep .swiper-pagination {
         margin-top: unset !important;
     }
+  ::v-deep .slider-item {
+    padding: 0 20px;
+  }
 }
 </style>

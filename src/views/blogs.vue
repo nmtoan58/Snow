@@ -1,149 +1,165 @@
 <template>
-    <div class="blogs-page">
-        <div class="blogs-category">
-            <div @click="showMenu" class="blogs__icon">
-                <ThemifyIcon class="icon" icon="layout-grid2-alt"></ThemifyIcon>
+    <Helmet title="Snow | Blogs">
+        <HeaderSP></HeaderSP>
+        <div class="blogs-page">
+            <div class="blogs-category">
+                <div @click="showMenu" class="blogs__icon">
+                    <ThemifyIcon
+                        class="icon icon-color"
+                        icon="layout-grid2-alt"
+                    ></ThemifyIcon>
+                </div>
+                <transition name="fade">
+                    <div class="category-list">
+                        <ul>
+                            <li class="category-item">
+                                <a href="" class="category-link">all</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="" class="category-link">nature</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="" class="category-link">cities</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="" class="category-link">branding</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="" class="category-link">design</a>
+                            </li>
+                        </ul>
+                    </div>
+                </transition>
             </div>
-            <transition name="fade">
-                <div v-if="showMenuBar" class="category-list">
-                    <ul>
-                        <li class="category-item">
-                            <a href="" class="category-link">all</a>
-                        </li>
-                        <li class="category-item">
-                            <a href="" class="category-link">branding</a>
-                        </li>
-                        <li class="category-item">
-                            <a href="" class="category-link">print</a>
-                        </li>
-                        <li class="category-item">
-                            <a href="" class="category-link">photography</a>
-                        </li>
-                        <li class="category-item">
-                            <a href="" class="category-link">design</a>
-                        </li>
-                        <li class="category-item">
-                            <a href="" class="category-link">mockup</a>
-                        </li>
-                    </ul>
-                </div>
-            </transition>
+            <div class="blogs-box blogs-effect">
+                <router-link to="/blog-detail" class="blogs__item blogs-res">
+                    <div class="blogs__img">
+                        <img
+                            src="../assets/images/blogs/post-1-mid.jpg"
+                            alt=""
+                        />
+                        <div class="btn-category">
+                            <span>Nature</span>
+                        </div>
+                    </div>
+                    <div class="blogs__content">
+                        <div class="blogs__title">
+                            <p>Something I need to tell you</p>
+                        </div>
+                        <div class="blogs__date">
+                            <p>September 18, 2016</p>
+                        </div>
+                        <div class="blogs__description">
+                            <p>
+                                That female isn't midst divide kind upon seas
+                                lights greater green creature lights brought.
+                            </p>
+                            <p>
+                                Created midst beast lights dominion he life fill
+                                very for their. Divide let kind created all
+                                she'd unto stars. And behold greater may in god
+                                image void cattle us days midst creepeth. Sixth
+                                also. Tree give it beast upon. Saying land in.
+                            </p>
+                            <p>
+                                All. Seasons saying creepeth appear hath
+                                fruitful. Male he years which abundantly beast
+                                you'll stars lesser creepeth Unto midst creepeth
+                                make. Isn't air, unto light forth divide their
+                                days. Fish.
+                            </p>
+                        </div>
+                    </div>
+                </router-link>
+                <router-link to="/blog-detail" class="blogs__item blogs-res">
+                    <div class="blogs__img">
+                        <img
+                            src="../assets/images/blogs/post-1-mid.jpg"
+                            alt=""
+                        />
+                        <div class="btn-category">
+                            <span>Nature</span>
+                        </div>
+                    </div>
+                    <div class="blogs__content">
+                        <div class="blogs__title">
+                            <p>Something I need to tell you</p>
+                        </div>
+                        <div class="blogs__date">
+                            <p>September 18, 2016</p>
+                        </div>
+                        <div class="blogs__description">
+                            <p>
+                                That female isn't midst divide kind upon seas
+                                lights greater green creature lights brought.
+                            </p>
+                            <p>
+                                Created midst beast lights dominion he life fill
+                                very for their. Divide let kind created all
+                                she'd unto stars. And behold greater may in god
+                                image void cattle us days midst creepeth. Sixth
+                                also. Tree give it beast upon. Saying land in.
+                            </p>
+                            <p>
+                                All. Seasons saying creepeth appear hath
+                                fruitful. Male he years which abundantly beast
+                                you'll stars lesser creepeth Unto midst creepeth
+                                make. Isn't air, unto light forth divide their
+                                days. Fish.
+                            </p>
+                        </div>
+                    </div>
+                </router-link>
+                <router-link to="/blog-detail" class="blogs__item blogs-res">
+                    <div class="blogs__img">
+                        <img
+                            src="../assets/images/blogs/post-1-mid.jpg"
+                            alt=""
+                        />
+                        <div class="btn-category">
+                            <span>Nature</span>
+                        </div>
+                    </div>
+                    <div class="blogs__content">
+                        <div class="blogs__title">
+                            <p>Something I need to tell you</p>
+                        </div>
+                        <div class="blogs__date">
+                            <p>September 18, 2016</p>
+                        </div>
+                        <div class="blogs__description">
+                            <p>
+                                That female isn't midst divide kind upon seas
+                                lights greater green creature lights brought.
+                            </p>
+                            <p>
+                                Created midst beast lights dominion he life fill
+                                very for their. Divide let kind created all
+                                she'd unto stars. And behold greater may in god
+                                image void cattle us days midst creepeth. Sixth
+                                also. Tree give it beast upon. Saying land in.
+                            </p>
+                            <p>
+                                All. Seasons saying creepeth appear hath
+                                fruitful. Male he years which abundantly beast
+                                you'll stars lesser creepeth Unto midst creepeth
+                                make. Isn't air, unto light forth divide their
+                                days. Fish.
+                            </p>
+                        </div>
+                    </div>
+                </router-link>
+            </div>
+            <div class="blogs-load-more">
+                <a href="#" class="blogs-load-more-link">load more blogs</a>
+            </div>
         </div>
-        <div class="blogs-box">
-            <router-link to="/blog-detail" class="blogs__item blogs-res">
-                <div class="blogs__img">
-                    <img src="../assets/images/blogs/post-1-mid.jpg" alt="" />
-                    <div class="btn-category">
-                        <span>Nature</span>
-                    </div>
-                </div>
-                <div class="blogs__content">
-                    <div class="blogs__title">
-                        <p>Something I need to tell you</p>
-                    </div>
-                    <div class="blogs__date">
-                        <p>September 18, 2016</p>
-                    </div>
-                    <div class="blogs__description">
-                        <p>
-                            That female isn't midst divide kind upon seas lights
-                            greater green creature lights brought.
-                        </p>
-                        <p>
-                            Created midst beast lights dominion he life fill
-                            very for their. Divide let kind created all she'd
-                            unto stars. And behold greater may in god image void
-                            cattle us days midst creepeth. Sixth also. Tree give
-                            it beast upon. Saying land in.
-                        </p>
-                        <p>
-                            All. Seasons saying creepeth appear hath fruitful.
-                            Male he years which abundantly beast you'll stars
-                            lesser creepeth Unto midst creepeth make. Isn't air,
-                            unto light forth divide their days. Fish.
-                        </p>
-                    </div>
-                </div>
-            </router-link>
-            <router-link to="/blog-detail" class="blogs__item blogs-res">
-                <div class="blogs__img">
-                    <img src="../assets/images/blogs/post-1-mid.jpg" alt="" />
-                    <div class="btn-category">
-                        <span>Nature</span>
-                    </div>
-                </div>
-                <div class="blogs__content">
-                    <div class="blogs__title">
-                        <p>Something I need to tell you</p>
-                    </div>
-                    <div class="blogs__date">
-                        <p>September 18, 2016</p>
-                    </div>
-                    <div class="blogs__description">
-                        <p>
-                            That female isn't midst divide kind upon seas lights
-                            greater green creature lights brought.
-                        </p>
-                        <p>
-                            Created midst beast lights dominion he life fill
-                            very for their. Divide let kind created all she'd
-                            unto stars. And behold greater may in god image void
-                            cattle us days midst creepeth. Sixth also. Tree give
-                            it beast upon. Saying land in.
-                        </p>
-                        <p>
-                            All. Seasons saying creepeth appear hath fruitful.
-                            Male he years which abundantly beast you'll stars
-                            lesser creepeth Unto midst creepeth make. Isn't air,
-                            unto light forth divide their days. Fish.
-                        </p>
-                    </div>
-                </div>
-            </router-link>
-            <router-link to="/blog-detail" class="blogs__item blogs-res">
-                <div class="blogs__img">
-                    <img src="../assets/images/blogs/post-1-mid.jpg" alt="" />
-                    <div class="btn-category">
-                        <span>Nature</span>
-                    </div>
-                </div>
-                <div class="blogs__content">
-                    <div class="blogs__title">
-                        <p>Something I need to tell you</p>
-                    </div>
-                    <div class="blogs__date">
-                        <p>September 18, 2016</p>
-                    </div>
-                    <div class="blogs__description">
-                        <p>
-                            That female isn't midst divide kind upon seas lights
-                            greater green creature lights brought.
-                        </p>
-                        <p>
-                            Created midst beast lights dominion he life fill
-                            very for their. Divide let kind created all she'd
-                            unto stars. And behold greater may in god image void
-                            cattle us days midst creepeth. Sixth also. Tree give
-                            it beast upon. Saying land in.
-                        </p>
-                        <p>
-                            All. Seasons saying creepeth appear hath fruitful.
-                            Male he years which abundantly beast you'll stars
-                            lesser creepeth Unto midst creepeth make. Isn't air,
-                            unto light forth divide their days. Fish.
-                        </p>
-                    </div>
-                </div>
-            </router-link>
-            
-        </div>
-        <div class="blogs-load-more">
-            <a href="#" class="blogs-load-more-link">load more blogs</a>
-        </div>
-    </div>
+    </Helmet>
 </template>
 <script>
 import ThemifyIcon from "vue-themify-icons";
+import HeaderSP from "@/components/HeaderSP.vue";
+import Helmet from "@/components/Helmet.vue";
 export default {
     data() {
         return {
@@ -152,10 +168,20 @@ export default {
     },
     components: {
         ThemifyIcon,
+        HeaderSP,
+        Helmet,
     },
     methods: {
         showMenu() {
-            this.showMenuBar = !this.showMenuBar;
+            document
+                .querySelector(".category-list")
+                .classList.toggle("active-nav");
+            document
+                .querySelector(".blogs-effect")
+                .classList.toggle("blogs-effect-active");
+            document
+                .querySelector(".icon-color")
+                .classList.toggle("active-color");
         },
     },
 };
@@ -171,6 +197,7 @@ export default {
     flex-direction: column;
     font-family: "Work Sans", sans-serif;
     margin-bottom: 100px;
+    margin-top: -100px;
 }
 .blogs {
     padding: 160px 100px 100px 100px;
@@ -206,7 +233,7 @@ export default {
     background-color: #fff;
     display: block;
 }
-.blogs__item:not(:last-child){
+.blogs__item:not(:last-child) {
     margin-bottom: 30px;
 }
 .blogs__img {
@@ -293,7 +320,9 @@ export default {
     display: block;
     color: #000;
 }
-
+.blogs-load-more-link:hover {
+    opacity: 0.8;
+}
 /*menu bar */
 .blogs-menu-bar {
     margin-top: 100px;
@@ -307,7 +336,6 @@ export default {
 .blogs-category {
     text-align: center;
     padding: 20px;
-    margin-top: 100px;
     background-color: #f6f6f6;
     font-family: "Work Sans", sans-serif;
     font-size: 0.8rem;
@@ -316,6 +344,7 @@ export default {
 .blogs-category ul {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .blogs-category ul li {
     padding: 5px 17px;
@@ -350,5 +379,26 @@ export default {
 }
 .fade-leave-active {
     transition: all 0.3s;
+}
+
+/* active class */
+.category-list {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease-in-out;
+}
+.active-nav {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+.portfolio-effect {
+    transition: all 1s ease-in-out;
+}
+.icon-color {
+    color: #5f5f5f;
+    transition: all 0.5s ease-in-out;
+}
+.active-color {
+    color: #000;
 }
 </style>

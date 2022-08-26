@@ -1,23 +1,25 @@
 <template>
-    <header class="header" v-on:scroll="handleScroll">
+    <header class="header">
         <div class="container">
             <div class="wrap-header">
                 <div class="logo">
-                    <router-link class="logo-link logow" to="/home">
+                    <!-- <router-link class="logo-link logow" to="/home">
                         <img src="../assets/images/logo-light.svg" alt="" />
-                    </router-link>
-                    <router-link class="logo-link logob" to="/home">
+                    </router-link> -->
+                    <router-link class="logo-link logoblack" to="/home">
                         <img src="../assets/images/logo.svg" alt="" />
                     </router-link>
                 </div>
                 <div class="menu-bar">
                     <ul class="menu-bar__list">
                         <li class="menu-bar__item">
-                            <a class="menu-bar__link" href="#about">about</a>
+                            <router-link class="menu-bar__link" to="/"
+                                >about</router-link
+                            >
                         </li>
                         <li class="menu-bar__item">
-                            <a class="menu-bar__link" href="#contact"
-                                >contact</a
+                            <router-link class="menu-bar__link" to="/home"
+                                >contact</router-link
                             >
                         </li>
                         <li class="menu-bar__item">
@@ -148,9 +150,7 @@
 <script>
 import ThemifyIcon from "../../node_modules/vue-themify-icons/ThemifyIcon.vue";
 export default {
-    data() {
-        return {};
-    },
+    components: { ThemifyIcon },
     methods: {
         showMenuMobile() {
             document
@@ -162,133 +162,127 @@ export default {
                 .querySelector(".header-menu-mobile")
                 .classList.remove("active-menu-mobile");
         },
-        // changeColorText(){
-        //   let ele = document.getElementsByClassName("menu-bar__link");
-        //   for (let i = 0; i < ele.length; i++) {
-        //       ele[i].classList.add('menu-bar__link-than50')
-        //       // ele[i].style.color = colorDark;
-        //       // ele[i].onmouseover = function () {
-        //       //   this.style.color = colorLight;
-        //       // };
-        //       // ele[i].onmouseout = function () {
-        //       //   this.style.color = colorDark;
-        //       // };
-        //     }
-        // },
-        handleScroll() {
-            let whiteColor = "#fff";
-            let colorDark = "#0e0e0e";
-            let colorLight = "#bfbfbf";
-            if (document.documentElement.scrollTop > 50) {
-                document.querySelector(".logob").style.display = "block";
-                document.querySelector(".logow").style.display = "none";
-                document.querySelector(".header").style.backgroundColor =
-                    "white";
-            }
-            if (document.documentElement.scrollTop < 50) {
-                document.querySelector(".logob").style.display = "none";
-                document.querySelector(".logow").style.display = "block";
-                document.querySelector(".header").style.backgroundColor =
-                    "transparent";
-                // for (i; i < ele.length; i++) {
-                //   ele[i].classList.add('menu-bar__link-less50')
-                //   // ele[i].style.color = colorLight;
-                //   // ele[i].onmouseover = function () {
-                //   //   this.style.color = colorDark;
-                //   // };
-                //   // ele[i].onmouseout = function () {
-                //   //   this.style.color = colorLight;
-                //   // };
-                // }
-            }
-        },
     },
-    mounted() {
-        window.addEventListener("scroll", this.handleScroll);
-        document.querySelector(".logow").style.display = "block";
-        document.querySelector(".logob").style.display = "none";
-        document.querySelector(".header").style.backgroundColor = "transparent";
-        // //Color
-        // let ele = document.getElementsByClassName("menu-bar__link");
-        // let i = 0;
-        // for (i; i < ele.length; i++) {
-        //   ele[i].style.color = colorDark;
-        //   ele[i].onmouseover = function () {
-        //     this.style.color = colorLight;
-        //   };
-        //   ele[i].onmouseout = function () {
-        //     this.style.color = colorDark;
-        //   };
-        // }
-        // window.addEventListener("onload", this.changeColorText())
-    },
-    components: { ThemifyIcon },
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
+@import "../assets/css/responsive/responsive.css";
+@import "../assets/css/scss/style.scss";
 header {
-    font-family: var(--header-font);
-    /* color: var(--header-text-color); */
+    font-family: $font_text;
 
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    transition: all 0.5s;
-    z-index: 10;
-}
-.wrap-header,
-.menu-bar__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.wrap-header {
-    padding: 33px 15px;
-}
-.header-mobile-responsive {
-    width: 100%;
-}
-.icon-white {
-    color: #fff;
-}
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.logo .logo-link {
-    width: 88px;
-    height: 33px;
-    display: block;
-}
-.logo .logo-link img {
-    width: 100%;
-}
-.menu-bar__list {
-    position: relative;
-    padding-left: 20px;
-}
-.menu-bar__link {
-    text-transform: uppercase;
-    /* font-weight: bold; */
-    display: block;
-    padding: 6px 14.6px;
-    color: var(--header-text-color);
-    font-size: 14px;
-}
-.menu-bar__link-less50:hover {
-    color: #fff;
-}
-.menu-bar__link:hover {
-    color: #000;
-    transition: all 0.5s;
-}
-.router-link-exact-active {
-    color: #000;
+    .wrap-header,
+    .menu-bar__list {
+        @include displayWH(flex, center, space-between);
+    }
+    .wrap-header {
+        padding: 33px 15px;
+        .logo .logo-link {
+            width: 88px;
+            height: 33px;
+            display: block;
+        }
+        .logoblack {
+            display: block !important;
+        }
+        .logowhite {
+            width: 88px;
+            height: 33px;
+            display: block;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .icon-white {
+            color: #fff;
+        }
+        .logo .logo-link img {
+            width: 100%;
+        }
+        .menu-bar-mobile {
+            .header-menu-mobile {
+                .header-mobile-responsive {
+                    width: 100%;
+
+                    .logo {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                }
+
+                @include maxWidth(1023px) {
+                    position: fixed;
+                    left: 0;
+                    right: 0;
+                    background-color: rgba(0, 0, 0, 0.9);
+                    top: 0;
+                    bottom: 0;
+                    padding: 15px;
+                    z-index: -1;
+                    visibility: hidden;
+                    opacity: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-family: "Playfair Display", serif;
+                    transition: all 0.1s ease-in-out;
+                }
+            }
+        }
+        .menu-bar__list {
+            position: relative;
+
+            @include maxWidth(1023px) {
+                .menu-bar__item {
+                    opacity: 0;
+                }
+                .menu-bar__item:nth-child(1) {
+                    transition: all 1.4s ease-in-out;
+                }
+                .menu-bar__item:nth-child(2) {
+                    transition: all 1.8s ease-in-out;
+                }
+                .menu-bar__item:nth-child(3) {
+                    transition: all 2.2s ease-in-out;
+                }
+                .menu-bar__item:nth-child(4) {
+                    transition: all 2.4s ease-in-out;
+                }
+                .menu-bar__item:nth-child(5) {
+                    transition: all 2.8s ease-in-out;
+                }
+            }
+        }
+        .menu-bar__link {
+            text-transform: uppercase;
+            display: block;
+            padding: 6px 14.6px;
+            color: $text-gray;
+            font-size: 14px;
+            line-height: 2rem;
+
+            @include maxWidth(1023px) {
+                text-transform: unset;
+            }
+        }
+        .menu-bar__link-less50:hover {
+            color: #fff;
+        }
+        .menu-bar__link:hover {
+            color: #000;
+            transition: all 0.5s;
+        }
+        .router-link-exact-active {
+            color: #000;
+        }
+    }
 }
 
-/* //social */
+//social
 .footer__items {
     display: flex;
 }
@@ -312,12 +306,11 @@ header {
     margin-top: 20px;
     color: #fff;
 }
-
-/* class hide & active */
+//class hide & active
 .active-menu-mobile {
     z-index: 2 !important;
     opacity: 1 !important;
-    visibility: visible;
+    visibility: visible !important;
 }
 .active-menu-mobile .menu-bar__item {
     opacity: 1 !important;

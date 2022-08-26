@@ -1,6 +1,6 @@
 @media (max-width: 1024px) {
     .banner__content {
-        /* bottom: 0 !important; */
+        
         width: 100%;
     }
     .brand-box {
@@ -83,18 +83,14 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-    .brands__item {
+    /* .brands__item {
         width: 33% !important;
-    }
+    } */
     .blogs__title-head {
         margin-bottom: 20px !important;
         width: 100% !important;
     }
-    .blogs-box {
-        flex-wrap: wrap;
-    }
     .blogs__item {
-        width: 48% !important;
         margin: 20px 0;
     }
     .contact-box {
@@ -168,7 +164,7 @@
     .slider-item {
         padding: 0 !important;
     }
-    .brands__item {
+    /* .brands__item {
         width: 50% !important;
-    }
+    } */
 }

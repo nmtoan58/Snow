@@ -2,7 +2,7 @@
     <div class="portfolio">
         <div class="container">
             <div class="portfolio-box">
-                <router-link to="/" class="item">
+                <router-link to="/video" class="item">
                     <div class="item__img">
                         <img
                             src="../assets/images/best-projects/portfolio-7-sm.jpg"
@@ -19,7 +19,7 @@
                         </div>
                     </div>
                 </router-link>
-                <router-link to="/" class="item">
+                <router-link to="/video" class="item">
                     <div class="item__img">
                         <img
                             src="../assets/images/best-projects/portfolio-4-sm.jpg"
@@ -36,7 +36,7 @@
                         </div>
                     </div>
                 </router-link>
-                <router-link to="/" class="item">
+                <router-link to="/video" class="item">
                     <div class="item__img">
                         <img
                             src="../assets/images/best-projects/portfolio-5-sm.jpg"
@@ -53,7 +53,7 @@
                         </div>
                     </div>
                 </router-link>
-                <router-link to="/" class="item">
+                <router-link to="/video" class="item">
                     <div class="item__img">
                         <img
                             src="../assets/images/best-projects/portfolio-9-sm.jpg"
@@ -70,7 +70,7 @@
                         </div>
                     </div>
                 </router-link>
-                <router-link to="/" class="item">
+                <router-link to="/video" class="item">
                     <div class="item__img">
                         <img
                             src="../assets/images/best-projects/portfolio-3-sm.jpg"
@@ -87,7 +87,7 @@
                         </div>
                     </div>
                 </router-link>
-                <router-link to="/" class="item">
+                <router-link to="/video" class="item">
                     <div class="item__img">
                         <img
                             src="../assets/images/best-projects/portfolio-8-sm.jpg"
@@ -104,7 +104,7 @@
                         </div>
                     </div>
                 </router-link>
-                <router-link to="/" class="item">
+                <router-link to="/video" class="item">
                     <div class="item__img">
                         <img
                             src="../assets/images/best-projects/portfolio-2-sm.jpg"
@@ -121,7 +121,7 @@
                         </div>
                     </div>
                 </router-link>
-                <router-link to="/" class="item">
+                <router-link to="/video" class="item">
                     <div class="item__img">
                         <img
                             src="../assets/images/best-projects/portfolio-6-sm.jpg"
@@ -138,7 +138,7 @@
                         </div>
                     </div>
                 </router-link>
-                <router-link to="/" class="item">
+                <router-link to="/video" class="item">
                     <div class="item__img">
                         <img
                             src="../assets/images/best-projects/portfolio-12-sm.jpg"
@@ -177,6 +177,7 @@ export default {};
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 100px;
+    transition: all 0.5s ease-in-out;
 }
 .item__img {
     width: 100%;
@@ -207,8 +208,7 @@ export default {};
     transition: all 0.5s;
 }
 .item:hover .item__category,
-.item:focus .item__category
- {
+.item:focus .item__category {
     opacity: 1;
     transform: translateY(-10px);
     transition: all 0.8s;

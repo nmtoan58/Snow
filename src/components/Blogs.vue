@@ -16,18 +16,44 @@
         </div>
         <div class="container">
             <swiper
+                :slides-per-view="3"
                 :spaceBetween="30"
-                :centeredSlides="true"
                 :pagination="{
                     clickable: true,
                 }"
-                :navigation="true"
+                
                 :modules="modules"
+                :breakpoints="{
+                    1920: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                    1024: {
+                        slidesPerView: 2,
+                        spaceBetween: 10,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 10,
+                    },
+                    425: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
+                    375: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
+                }"
                 class="mySwiper"
             >
                 <swiper-slide>
                     <div class="blogs-box">
-                        <div class="blogs__item">
+                        <router-link to="/blog-detail" class="blogs__item">
                             <div class="blogs__img">
                                 <img
                                     src="../assets/images/blogs/post-1-mid.jpg"
@@ -52,64 +78,12 @@
                                     </p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="blogs__item">
-                            <div class="blogs__img">
-                                <img
-                                    src="../assets/images/blogs/post-1-mid.jpg"
-                                    alt=""
-                                />
-                                <div class="btn-category">
-                                    <span>Nature</span>
-                                </div>
-                            </div>
-                            <div class="blogs__content">
-                                <div class="blogs__title">
-                                    <p>Something I need to tell you</p>
-                                </div>
-                                <div class="blogs__date">
-                                    <p>September 18, 2016</p>
-                                </div>
-                                <div class="blogs__description">
-                                    <p>
-                                        That female isn't midst divide kind upon
-                                        seas lights greater green creature
-                                        lights brought.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blogs__item">
-                            <div class="blogs__img">
-                                <img
-                                    src="../assets/images/blogs/post-1-mid.jpg"
-                                    alt=""
-                                />
-                                <div class="btn-category">
-                                    <span>Nature</span>
-                                </div>
-                            </div>
-                            <div class="blogs__content">
-                                <div class="blogs__title">
-                                    <p>Something I need to tell you</p>
-                                </div>
-                                <div class="blogs__date">
-                                    <p>September 18, 2016</p>
-                                </div>
-                                <div class="blogs__description">
-                                    <p>
-                                        That female isn't midst divide kind upon
-                                        seas lights greater green creature
-                                        lights brought.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        </router-link>
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="blogs-box">
-                        <div class="blogs__item">
+                        <router-link to="/blog-detail" class="blogs__item">
                             <div class="blogs__img">
                                 <img
                                     src="../assets/images/blogs/post-1-mid.jpg"
@@ -134,61 +108,130 @@
                                     </p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="blogs__item">
-                            <div class="blogs__img">
-                                <img
-                                    src="../assets/images/blogs/post-1-mid.jpg"
-                                    alt=""
-                                />
-                                <div class="btn-category">
-                                    <span>Nature</span>
-                                </div>
-                            </div>
-                            <div class="blogs__content">
-                                <div class="blogs__title">
-                                    <p>Something I need to tell you</p>
-                                </div>
-                                <div class="blogs__date">
-                                    <p>September 18, 2016</p>
-                                </div>
-                                <div class="blogs__description">
-                                    <p>
-                                        That female isn't midst divide kind upon
-                                        seas lights greater green creature
-                                        lights brought.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blogs__item">
-                            <div class="blogs__img">
-                                <img
-                                    src="../assets/images/blogs/post-1-mid.jpg"
-                                    alt=""
-                                />
-                                <div class="btn-category">
-                                    <span>Nature</span>
-                                </div>
-                            </div>
-                            <div class="blogs__content">
-                                <div class="blogs__title">
-                                    <p>Something I need to tell you</p>
-                                </div>
-                                <div class="blogs__date">
-                                    <p>September 18, 2016</p>
-                                </div>
-                                <div class="blogs__description">
-                                    <p>
-                                        That female isn't midst divide kind upon
-                                        seas lights greater green creature
-                                        lights brought.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        </router-link>
                     </div>
                 </swiper-slide>
+                <swiper-slide>
+                    <div class="blogs-box">
+                        <router-link to="/blog-detail" class="blogs__item">
+                            <div class="blogs__img">
+                                <img
+                                    src="../assets/images/blogs/post-1-mid.jpg"
+                                    alt=""
+                                />
+                                <div class="btn-category">
+                                    <span>Nature</span>
+                                </div>
+                            </div>
+                            <div class="blogs__content">
+                                <div class="blogs__title">
+                                    <p>Something I need to tell you</p>
+                                </div>
+                                <div class="blogs__date">
+                                    <p>September 18, 2016</p>
+                                </div>
+                                <div class="blogs__description">
+                                    <p>
+                                        That female isn't midst divide kind upon
+                                        seas lights greater green creature
+                                        lights brought.
+                                    </p>
+                                </div>
+                            </div>
+                        </router-link>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="blogs-box">
+                        <router-link to="/blog-detail" class="blogs__item">
+                            <div class="blogs__img">
+                                <img
+                                    src="../assets/images/blogs/post-1-mid.jpg"
+                                    alt=""
+                                />
+                                <div class="btn-category">
+                                    <span>Nature</span>
+                                </div>
+                            </div>
+                            <div class="blogs__content">
+                                <div class="blogs__title">
+                                    <p>Something I need to tell you</p>
+                                </div>
+                                <div class="blogs__date">
+                                    <p>September 18, 2016</p>
+                                </div>
+                                <div class="blogs__description">
+                                    <p>
+                                        That female isn't midst divide kind upon
+                                        seas lights greater green creature
+                                        lights brought.
+                                    </p>
+                                </div>
+                            </div>
+                        </router-link>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="blogs-box">
+                        <router-link to="/blog-detail" class="blogs__item">
+                            <div class="blogs__img">
+                                <img
+                                    src="../assets/images/blogs/post-1-mid.jpg"
+                                    alt=""
+                                />
+                                <div class="btn-category">
+                                    <span>Nature</span>
+                                </div>
+                            </div>
+                            <div class="blogs__content">
+                                <div class="blogs__title">
+                                    <p>Something I need to tell you</p>
+                                </div>
+                                <div class="blogs__date">
+                                    <p>September 18, 2016</p>
+                                </div>
+                                <div class="blogs__description">
+                                    <p>
+                                        That female isn't midst divide kind upon
+                                        seas lights greater green creature
+                                        lights brought.
+                                    </p>
+                                </div>
+                            </div>
+                        </router-link>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="blogs-box">
+                        <router-link to="/blog-detail" class="blogs__item">
+                            <div class="blogs__img">
+                                <img
+                                    src="../assets/images/blogs/post-1-mid.jpg"
+                                    alt=""
+                                />
+                                <div class="btn-category">
+                                    <span>Nature</span>
+                                </div>
+                            </div>
+                            <div class="blogs__content">
+                                <div class="blogs__title">
+                                    <p>Something I need to tell you</p>
+                                </div>
+                                <div class="blogs__date">
+                                    <p>September 18, 2016</p>
+                                </div>
+                                <div class="blogs__description">
+                                    <p>
+                                        That female isn't midst divide kind upon
+                                        seas lights greater green creature
+                                        lights brought.
+                                    </p>
+                                </div>
+                            </div>
+                        </router-link>
+                    </div>
+                </swiper-slide>
+
                 <!-- <swiper-slide> </swiper-slide>
         <swiper-slide> </swiper-slide> -->
             </swiper>
@@ -220,11 +263,8 @@ export default {
     },
 };
 </script>
-<style scoped>
-.blogs-box {
-    display: flex;
-    justify-content: space-between;
-}
+<style lang="scss" scoped>
+@import "../assets/css/scss/style.scss";
 .blogs {
     padding: 160px 100px 100px 100px;
     background-color: #fafafa;
@@ -232,9 +272,9 @@ export default {
     text-align: center;
 }
 .blog__title-header {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 .blogs__title-head {
     margin-bottom: 60px;
@@ -254,8 +294,8 @@ export default {
     color: #5f5f5f;
 }
 .blogs__item {
-    width: 31.5%;
     background-color: #fff;
+    display: block;
 }
 
 .blogs__img {
@@ -263,6 +303,7 @@ export default {
 }
 .blogs__content {
     padding: 25px 30px;
+    text-align: left;
 }
 .blogs__title {
     font-family: "Playfair Display", serif;
@@ -270,6 +311,10 @@ export default {
     font-size: 1.4rem;
     margin: 0 0 20px 0;
     transition: all 0.5s;
+
+    p {
+        color: $black-color;
+    }
 }
 .blogs__title:hover {
     opacity: 0.6;
@@ -278,6 +323,10 @@ export default {
     margin-bottom: 20px;
     text-transform: uppercase;
     font-size: 0.85rem;
+
+    p {
+        color: $black-color;
+    }
 }
 .blogs__description {
     color: #5f5f5f;
@@ -324,7 +373,7 @@ export default {
     background-color: #333;
 }
 ::v-deep .swiper-pagination {
-  position: unset;
-  margin-top: 80px;
+    position: unset;
+    margin-top: 80px;
 }
 </style>

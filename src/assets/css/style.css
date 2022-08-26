@@ -13,11 +13,16 @@
     margin: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-size: 62.5%;
     font-size: 15px;
     line-height: 16.5px;
+    user-select: none;
+    scroll-behavior: smooth;
 }
 
 ul {

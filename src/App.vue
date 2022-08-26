@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header-vue/>
+    <!-- <header-vue/> -->
     <router-view></router-view>
     <Footer></Footer>
   </div>

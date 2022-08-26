@@ -1,135 +1,145 @@
 <template>
-    <div class="wrap-banner">
-        <div class="banner">
-            <div class="overlay"></div>
-        </div>
-        <div class="banner__content">
-            <div>
-                <h2 class="content__subtitle">new branding agecy</h2>
-                <h1>
-                    We are about to change the way
-                    <p></p>
-                    <em>you publish on the web</em>
-                </h1>
-                <button class="btn btn-banner">free download</button>
+    <Helmet title="Best Free HTML Portfolio Template">
+        <Header></Header>
+        <div class="wrap-banner">
+            <div class="banner">
+                <div class="overlay"></div>
             </div>
-        </div>
-        <div class="banner__btn-brand">
-            <a href="#brand">
-                <ThemifyIcon icon="angle-down"></ThemifyIcon>
-            </a>
-        </div>
-    </div>
-    <div class="about" id="about">
-        <div class="container">
-            <div class="about-box">
-                <div class="about-title">
-                    <h2>About Our Agency</h2>
-                </div>
-                <div class="about-description">
-                    <p>
-                        We are a new design studio based in USA. We have over 20
-                        years of combined experience, and know a thing or two
-                        about designing websites and mobile apps. Clever use of
-                        technology and lean processes enable us to work faster
-                        and smarter.
-                    </p>
-                </div>
-                <div class="about-i">
-                    <img src="../assets/images/about-me-signature.png" alt="" />
+            <div class="banner__content">
+                <div class="banner-content-inner">
+                    <h2 class="content__subtitle">new branding agecy</h2>
+                    <h1>
+                        We are about to change the way
+                        <p></p>
+                        <em>you publish on the web</em>
+                    </h1>
+                    <a
+                        href="https://sudinasa.gumroad.com/l/snow-sudinasa"
+                        class="btn btn-banner"
+                        >free download</a
+                    >
                 </div>
             </div>
+            <div class="banner__btn-brand">
+                <a href="#about">
+                    <ThemifyIcon icon="angle-down"></ThemifyIcon>
+                </a>
+            </div>
         </div>
-    </div>
-    <div class="brand">
-        <div class="container">
-            <div class="brand-box">
-                <div class="brand__item">
-                    <div class="brand__logo">
-                        <ThemifyIcon icon="briefcase"></ThemifyIcon>
+        <div class="about" id="about">
+            <div class="container">
+                <div class="about-box">
+                    <div class="about-title">
+                        <h2>About Our Agency</h2>
                     </div>
-                    <div class="brand__data">
-                        <div class="brand__data-number">
-                            <span>548</span>
-                        </div>
-                        <div class="brand__data-name">
-                            <span>projects completed</span>
-                        </div>
+                    <div class="about-description">
+                        <p>
+                            We are a new design studio based in USA. We have
+                            over 20 years of combined experience, and know a
+                            thing or two about designing websites and mobile
+                            apps. Clever use of technology and lean processes
+                            enable us to work faster and smarter.
+                        </p>
+                    </div>
+                    <div class="about-i">
+                        <img
+                            src="../assets/images/about-me-signature.png"
+                            alt=""
+                        />
                     </div>
                 </div>
+            </div>
+        </div>
+        <div id="brand" class="brand">
+            <div class="container">
+                <div class="brand-box">
+                    <div class="brand__item">
+                        <div class="brand__logo">
+                            <ThemifyIcon icon="briefcase"></ThemifyIcon>
+                        </div>
+                        <div class="brand__data">
+                            <div class="brand__data-number">
+                                <span>548</span>
+                            </div>
+                            <div class="brand__data-name">
+                                <span>projects completed</span>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="brand__item">
-                    <div class="brand__logo">
-                        <ThemifyIcon icon="time"></ThemifyIcon>
-                    </div>
-                    <div class="brand__data">
-                        <div class="brand__data-number">
-                            <span>1465</span>
+                    <div class="brand__item">
+                        <div class="brand__logo">
+                            <ThemifyIcon icon="time"></ThemifyIcon>
                         </div>
-                        <div class="brand__data-name">
-                            <span>working hours</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="brand__item">
-                    <div class="brand__logo">
-                        <ThemifyIcon icon="star"></ThemifyIcon>
-                    </div>
-                    <div class="brand__data">
-                        <div class="brand__data-number">
-                            <span>612</span>
-                        </div>
-                        <div class="brand__data-name">
-                            <span>positive feedbacks</span>
+                        <div class="brand__data">
+                            <div class="brand__data-number">
+                                <span>1465</span>
+                            </div>
+                            <div class="brand__data-name">
+                                <span>working hours</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="brand__item">
-                    <div class="brand__logo">
-                        <ThemifyIcon icon="heart"></ThemifyIcon>
-                    </div>
-                    <div class="brand__data">
-                        <div class="brand__data-number">
-                            <span>735</span>
+                    <div class="brand__item">
+                        <div class="brand__logo">
+                            <ThemifyIcon icon="star"></ThemifyIcon>
                         </div>
-                        <div class="brand__data-name">
-                            <span>happy clients</span>
+                        <div class="brand__data">
+                            <div class="brand__data-number">
+                                <span>612</span>
+                            </div>
+                            <div class="brand__data-name">
+                                <span>positive feedbacks</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio">
-        <div class="porfolio-title">
-            <div class="portfolio__title-head">
-                <div class="portfolio__title-text">
-                    <h2>Lastest portfolio</h2>
-                </div>
-                <div class="portfolio__title-description">
-                    <p>
-                        Donec orci sem, pretium ac dolor et, faucibus faucibus
-                        mauris. Etiam,pellentesque faucibus. Vestibulum gravida
-                        volutpat ipsum non ultrices.
-                    </p>
+                    <div class="brand__item">
+                        <div class="brand__logo">
+                            <ThemifyIcon icon="heart"></ThemifyIcon>
+                        </div>
+                        <div class="brand__data">
+                            <div class="brand__data-number">
+                                <span>735</span>
+                            </div>
+                            <div class="brand__data-name">
+                                <span>happy clients</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <Portfolio></Portfolio>
-    </div>
-    <div class="slider-component">
-        <Slider></Slider>
-    </div>
-    <div class="brands">
-        <Brands></Brands>
-    </div>
-    <div class="blogs-component">
-        <div class="container"></div>
-        <Blogs></Blogs>
-    </div>
-    <div class="contact-component">
-        <Contact></Contact>
-    </div>
+        <div class="portfolio">
+            <div class="porfolio-title">
+                <div class="portfolio__title-head">
+                    <div class="portfolio__title-text">
+                        <h2>Lastest portfolio</h2>
+                    </div>
+                    <div class="portfolio__title-description">
+                        <p>
+                            Donec orci sem, pretium ac dolor et, faucibus
+                            faucibus mauris. Etiam,pellentesque faucibus.
+                            Vestibulum gravida volutpat ipsum non ultrices.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <Portfolio></Portfolio>
+        </div>
+        <div class="slider-component">
+            <Slider></Slider>
+        </div>
+        <div class="brands">
+            <Brands></Brands>
+        </div>
+        <div class="blogs-component">
+            <div class="container"></div>
+            <Blogs></Blogs>
+        </div>
+        <div class="contact-component">
+            <Contact></Contact>
+        </div>
+    </Helmet>
 </template>
 <script>
 import Slider from "@/components/Slider.vue";
@@ -138,9 +148,19 @@ import Portfolio from "../components/Portfolio.vue";
 import Brands from "@/components/Brands.vue";
 import Blogs from "../components/Blogs.vue";
 import Contact from "../components/Contact.vue";
-
+import Header from "@/components/Header.vue";
+import Helmet from "@/components/Helmet.vue";
 export default {
-    components: { ThemifyIcon, Portfolio, Slider, Brands, Blogs, Contact },
+    components: {
+        ThemifyIcon,
+        Portfolio,
+        Slider,
+        Brands,
+        Blogs,
+        Contact,
+        Header,
+        Helmet,
+    },
 };
 </script>
 <style scoped>
@@ -188,7 +208,12 @@ h2 {
     line-height: 16.5px;
     margin-bottom: 1.2rem;
 }
-
+.banner-content-inner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
 h1 {
     font-size: 3.2rem !important;
     line-height: 4rem;
@@ -201,6 +226,7 @@ h1 {
     padding: 18px 0;
     font-weight: 600;
     margin-top: 45px;
+    display: block;
 }
 .btn-banner:hover,
 .btn-banner:focus {

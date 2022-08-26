@@ -13,6 +13,10 @@ const routes = [
         component: Home,
     },
     {
+        path: "/video",
+        component: import("./views/video-project-view"),
+    },
+    {
         path: "/:pathMatch(.*)*",
         component: import("../src/views/home.vue"),
     },

@@ -8,5 +8,7 @@ import '../src/assets/css/responsive/home_res.css'
 import '../src/assets/css/responsive/portfolio_res.css'
 //CSS
 import '../src/assets/css/style.css'
+//SCSS
+
 
 createApp(App).use(router).mount('#app')
