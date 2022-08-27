@@ -186,7 +186,8 @@ export default {
     },
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
+@import "../assets/css/scss/style.scss";
 .blogs-page {
     background-color: #f6f6f6;
 }
@@ -197,7 +198,6 @@ export default {
     flex-direction: column;
     font-family: "Work Sans", sans-serif;
     margin-bottom: 100px;
-    margin-top: -100px;
 }
 .blogs {
     padding: 160px 100px 100px 100px;
@@ -381,6 +381,21 @@ export default {
     transition: all 0.3s;
 }
 
+/* active class */
+
+.blogs-effect {
+    transition: all 1s ease-in-out;
+    margin-top: -30px !important;
+
+    @include maxWidth(1023px) {
+        transition: all 1s ease-in-out;
+        margin-top: -90px !important;
+    }
+}
+.blogs-effect-active {
+    transition: all 0.5s ease-in-out;
+    margin-top: 0px !important;
+}
 /* active class */
 .category-list {
     opacity: 0;

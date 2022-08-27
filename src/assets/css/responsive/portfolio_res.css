@@ -1,17 +1,13 @@
 @media (max-width: 1024px) {
-    .blogs-effect {
-        transition: all 1s ease-in-out;
-        margin-top: -90px !important;
-    }
+    
+}
+
+@media (max-width: 1023px) {
+    
 
     .portfolio-box {
         margin-top: 0px !important;
         transition: all 0.5s ease-in-out;
-    }
-
-    .blogs-effect-active {
-        transition: all 0.5s ease-in-out;
-        margin-top: 0px !important;
     }
 
     .portfolio-effect-active {
@@ -31,8 +27,6 @@
         height: unset !important;
     }
 }
-
-@media (max-width: 1023px) {}
 
 @media (max-width: 768px) {}
 

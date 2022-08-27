@@ -175,6 +175,16 @@ export default {
 }
 .portfolio-effect {
     transition: all 1s ease-in-out;
+    margin-top: -30px;
+}
+.portfolio-effect-active {
+    transition: all 0.5s ease-in-out;
+    margin-top: 10px !important;
+
+    @include maxWidth(1023px) {
+        margin-top: 50px !important;
+        transition: all 0.5s ease-in-out;
+    }
 }
 .icon-color {
     color: #5f5f5f;
